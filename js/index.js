@@ -38,9 +38,9 @@ var navigation = $('nav');
 
 $(window).scroll( function() {
   if ( $(window).scrollTop() > (viewHeight - 175) ) { //edit for nav height
-    navigation.addClass('sticky');
+    navigation.classList.add('sticky');
   } else {
-    navigation.removeClass('sticky');
+    navigation.classList.remove('sticky');
   }
 });
 
