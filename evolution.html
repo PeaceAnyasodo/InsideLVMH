@@ -291,19 +291,6 @@ $(".arrow-down").css("visibility","hidden");
   }else {
    $(".arrow-down").css("visibility","visible");
     
-    
-    if ("addEventListener" in window && "classList" in document.documentElement) {
-
-  var element = document.getElementById("nav"),
-    offset = element.offsetTop;
-
-  window.addEventListener("scroll", function() {
-    if (offset < window.pageYOffset) {
-      element.classList.add("fixed");
-    } else {
-      element.classList.remove("fixed");
-    }
-  }, false);
 
 }
 }
