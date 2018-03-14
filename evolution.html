@@ -26,14 +26,14 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="css/evolution.css">
+<link rel="stylesheet" type="text/css" href="css/evolution.css">
 <meta property="og:title" content="PrognRoll" />
 <meta property="og:description" content="A tiny, lightweight jQuery plugin that creates scroll progress bar on the page" />
 <meta property="og:type" content="website" />
 
 <header>
 <div class= shadow>
-  <h1 id="splash" style= font-size:50px;> <font color="white"> <br><br><br> Evolution of Retail</h1>
+  <h1 id="splash" style= font-size:50px;> <font color="white"> <br> Evolution of Retail</h1>
   <center><i><p>"By learning about the past and observing the present we can imagine the future"</i> - Team Tomorrow
   <br> <br> This timeline highlights global firsts that transformed the shopping experience </p></font>
   </center>
@@ -278,10 +278,13 @@ New issues arise due to impacts on customer interaction, accessibility and theft
 <script type="text/javascript" src="src/prognroll.js"></script>
 <script type="text/javascript">
 $(function() {
+
 $("body").prognroll();
+
 $(".content").prognroll({
   custom:true
 });
+
 $(window).scroll(function() {
   if( $(window).scrollTop() > 250) {
 $(".arrow-down").css("visibility","hidden");
