@@ -37,7 +37,7 @@ var viewHeight = $(window).height();
 var navigation = $('nav');
 
 $(window).scroll( function() {
-  if ( $(window).scrollTop() > (viewHeight - 200) ) { //edit for nav height
+  if ( $(window).scrollTop() > (viewHeight - 175) ) { //edit for nav height
     navigation.classList.add('sticky');
   } else {
     navigation.classList.remove('sticky');
